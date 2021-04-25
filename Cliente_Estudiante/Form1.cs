@@ -17,7 +17,7 @@ namespace Cliente_Estudiante
         public Form1(string nombre)
         {
             InitializeComponent();
-            //clienteSocket.Connect("127.0.0.1", 8080);
+            clienteSocket.Connect("127.0.0.1", 8080);
             lblnombre.Text = nombre;
         }
 
@@ -25,25 +25,25 @@ namespace Cliente_Estudiante
         {
             try
             {
-                string men = "";
-                if (btnverdadero.Checked)
-                {
-                    men = txtpregunta.Text + ",1";
-                }
-                else if (btnfalso.Checked)
-                {
-                    men = txtpregunta.Text + ",0";
-                }
+                //string men = "";
+                //if (btnverdadero.Checked)
+                //{
+                //    men = txtpregunta.Text + ",1";
+                //}
+                //else if (btnfalso.Checked)
+                //{
+                //    men = txtpregunta.Text + ",0";
+                //}
 
-                NetworkStream serverStream = clienteSocket.GetStream();
-                byte[] mensajeCliente = System.Text.Encoding.ASCII.GetBytes(men + "$");
-                serverStream.Write(mensajeCliente, 0, mensajeCliente.Length);
-                serverStream.Flush();
+                //NetworkStream serverStream = clienteSocket.GetStream();
+                //byte[] mensajeCliente = System.Text.Encoding.ASCII.GetBytes(men + "$");
+                //serverStream.Write(mensajeCliente, 0, mensajeCliente.Length);
+                //serverStream.Flush();
 
-                byte[] mensajeServidor = new byte[10025];
-                serverStream.Read(mensajeServidor, 0, 10024);
-                string me = System.Text.Encoding.ASCII.GetString(mensajeServidor);
-                string[] Rival = me.Split(new Char[] { ';' });
+                //byte[] mensajeServidor = new byte[10025];
+                //serverStream.Read(mensajeServidor, 0, 10024);
+                //string me = System.Text.Encoding.ASCII.GetString(mensajeServidor);
+                //string[] Rival = me.Split(new Char[] { ';' });
 
                
             }
@@ -58,13 +58,29 @@ namespace Cliente_Estudiante
         {
             
         }
-    }
 
-    internal class clienteSocket
-    {
-        internal static void Connect(string v1, int v2)
+        private void btnSolicitar_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                
+                NetworkStream serverStream = clienteSocket.GetStream();
+                byte[] mensajeCliente = System.Text.Encoding.ASCII.GetBytes("estudiante,solicitar pregunta" + "$");
+                serverStream.Write(mensajeCliente, 0, mensajeCliente.Length);
+                serverStream.Flush();
+
+                byte[] mensajeServidor = new byte[10025];
+                serverStream.Read(mensajeServidor, 0, 10024);
+                string me = System.Text.Encoding.ASCII.GetString(mensajeServidor);
+                me = me.Substring(0, me.IndexOf("$"));
+
+                txtpregunta.Text = me;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 

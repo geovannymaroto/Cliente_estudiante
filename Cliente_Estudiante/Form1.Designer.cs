@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
+            this.btnSolicitar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtpregunta
@@ -135,11 +136,22 @@
             this.lblnombre.Text = "Estudiante:";
             this.lblnombre.Click += new System.EventHandler(this.label6_Click);
             // 
+            // btnSolicitar
+            // 
+            this.btnSolicitar.Location = new System.Drawing.Point(73, 150);
+            this.btnSolicitar.Name = "btnSolicitar";
+            this.btnSolicitar.Size = new System.Drawing.Size(75, 23);
+            this.btnSolicitar.TabIndex = 7;
+            this.btnSolicitar.Text = "Solicitar pregunta";
+            this.btnSolicitar.UseVisualStyleBackColor = true;
+            this.btnSolicitar.Click += new System.EventHandler(this.btnSolicitar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 200);
+            this.Controls.Add(this.btnSolicitar);
             this.Controls.Add(this.lblnombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -169,6 +181,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblnombre;
+        private System.Windows.Forms.Button btnSolicitar;
     }
 }
 
