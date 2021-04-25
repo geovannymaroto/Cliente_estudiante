@@ -16,5 +16,21 @@ namespace Cliente_Estudiante
         {
             InitializeComponent();
         }
+
+        private void btnExamen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form1 frmPantalla = new Form1(txtnombre.Text);
+
+                frmPantalla.Show();
+                //this.Dispose();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

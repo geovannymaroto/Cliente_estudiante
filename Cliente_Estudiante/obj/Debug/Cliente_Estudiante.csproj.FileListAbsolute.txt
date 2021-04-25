@@ -9,3 +9,14 @@ C:\Users\gmb\Desktop\Examen Final\Cliente_Estudiante\Cliente_Estudiante\obj\Debu
 C:\Users\gmb\Desktop\Examen Final\Cliente_Estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.exe
 C:\Users\gmb\Desktop\Examen Final\Cliente_Estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.pdb
 C:\Users\gmb\Desktop\Examen Final\Cliente_Estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.Form2.resources
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.csprojAssemblyReference.cache
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.Form1.resources
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.Form2.resources
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.Properties.Resources.resources
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.csproj.GenerateResource.cache
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.csproj.CoreCompileInputs.cache
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.exe
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\obj\Debug\Cliente_Estudiante.pdb
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\bin\Debug\Cliente_Estudiante.exe.config
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\bin\Debug\Cliente_Estudiante.exe
+C:\Users\PereiraCoto\Desktop\ClienteEstudiante\Cliente_estudiante\Cliente_Estudiante\bin\Debug\Cliente_Estudiante.pdb

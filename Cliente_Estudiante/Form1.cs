@@ -14,10 +14,11 @@ namespace Cliente_Estudiante
     public partial class Form1 : Form
     {
         TcpClient clienteSocket = new TcpClient();
-        public Form1()
+        public Form1(string nombre)
         {
             InitializeComponent();
-            clienteSocket.Connect("127.0.0.1", 8080);
+            //clienteSocket.Connect("127.0.0.1", 8080);
+            lblnombre.Text = nombre;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,16 +45,12 @@ namespace Cliente_Estudiante
                 string me = System.Text.Encoding.ASCII.GetString(mensajeServidor);
                 string[] Rival = me.Split(new Char[] { ';' });
 
-                
-
-
-
                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
